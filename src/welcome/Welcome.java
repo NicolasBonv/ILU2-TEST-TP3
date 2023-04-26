@@ -6,6 +6,10 @@ public class Welcome {
 		StringBuilder sb = new StringBuilder();
 		if(( input == null) || (input.equals("")) || (input.equals(" "))) {
 				sb.append("Hello, my friend");
+		}else if(input.equals(input.toUpperCase())){
+			sb.append("HELLO, ");
+			sb.append(input);
+			sb.append(" !");
 		}else {
 			sb.append("Hello, ");
 			sb.append(Character.toUpperCase(input.charAt(0)));
