@@ -23,9 +23,14 @@ class WelcomeTest {
 		
 	}
 	@Test
-	void EX4_test() {
+	void Iter4_test() {
 		assertEquals("Hello, Amy, Bob",Welcome.welcome("amy,bob"));
 		assertEquals("Hello, Amy, Bob",Welcome.welcome("Amy,Bob"));
+	}
+	@Test
+	void Iter5_test() {
+		assertEquals("Hello, Amy, Bob, Jerry",Welcome.welcome("amy,bob,jerry"));
+		assertEquals("Hello, Amy, Bob, Jerry, Maxime, Romain, Nicolas",Welcome.welcome("Amy,Bob,Jerry,maxime,romain,Nicolas"));
 	}
 
 }
